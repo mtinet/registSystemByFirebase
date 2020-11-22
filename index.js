@@ -31,6 +31,10 @@ ref.on('value', function(snapshot) {
   const ksjs = Object.keys(data);
   console.log(ksjs);
 
+  for (const [key, value] of Object.entries(data)) {
+  console.log(`${key}:${value.num}:${value.name}:${value.score}`);
+}
+
 //  idNum = data.id;
 //  console.log(typeof idNum, idNum);
 
